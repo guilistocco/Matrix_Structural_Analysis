@@ -1,7 +1,7 @@
 from setuptools import setup
 
-setup(name='distributions',
+setup(name='Matrix_Structural_Analysis',
       version='0.1',
-      description='Gaussian distributions',
-      packages=['distributions'],
+      description='Matrices, attibutes and methods to Matrix Structural Analysis',
+      packages=['Matrix_Structural_Analysis'],
       zip_safe=False)
