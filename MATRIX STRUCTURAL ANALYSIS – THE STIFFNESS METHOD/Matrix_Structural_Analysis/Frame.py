@@ -5,6 +5,52 @@ from .Stiffiness_Matrix import Stiffiness_Matrix
 
 class Frame(Stiffness_Matrix):
     """
+    A 2D Frame is a type of structure where there are no traction or 
+    perpendicular (to the plane of the structures) forces are present
+
+    This class receives as an inheritance the Stiffiness Matrix
+
+    The sum of the stiffiness matrix (on the global system) of many bars
+    returns the stiffiness matrix of the whole structure
+
+    Inputs:
+        - length: length of each bar of the structure
+        - orientation_degrees: starting on the first quadrant, it's the 
+        direction of each bar
+        - incidence_list: list that represents where each node of the beam land
+        on each degree of freedom. It takes 4 arguments for a Truss and 6 for a
+        Frame
+        - Deg_freedom: represents the number of degrees of freedom of the full
+        structure, not only of the bar. It is 2*(number of nodes)
+        - EA: (optional, default=1) Young’s modulus * Area of a section of the 
+        bar (supposed constant)
+    	- EI: (optional, default=1) Young’s modulus * Inertia's Moment of a 
+        section of the bar (supposed constant)
+
+    Attributes:
+        - EA: returns the value of the attribute 
+        - DF: returns the value of the attribute 
+        - Stiff_M: returns the stiffiness matrix of the Truss, based on a
+        template
+        - local2global: returns the transformation matrix from the local 
+        coordinates system to global
+        - Incidency_M: returns the standard incidence matrix based on the
+        incidence list and degrees of freedom. The shape is 6xDoF
+        - Stiff_M_Global: returns the stiffiness matrix on the global system.
+        Shape is 6x6
+        - Stiff_M_Global_Spread: returns the stiffines matrix but considering
+        the incidence matrix. This matrix show how one bar individualy 
+        contributes to the stiffiness of the whole structure. Shape is DoFxDoF
+
+
+        Heritage attributes:
+        - l: gives the length of the bar
+        - orientation: gives the direction of the bar on degrees
+        - incidence: shows the incidence list of the bar
+
+    Methods:
+        - updade_EA: update the value of EA
+        - updade_EI: update the value of EI
     """
     def __init__(self, length, orientation_degrees , incidence_list, Deg_freedom, EA = 1, EI = 1):
         # list of attributes
