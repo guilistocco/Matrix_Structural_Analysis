@@ -23,27 +23,18 @@ Library to host all modules of the package.
 * MATRIX STRUCTURAL ANALYSIS – THE STIFFNESS METHOD contains .py files with modules used on the Matrix Structural Analysis method 
 * LICENCE indicates the MIT license for this project
 
-Matrix_Structural_Analysis/
+      Matrix_Structural_Analysis/
 
-├── Stiffiness Matrix.ipynb
-
-├── LICENSE
-
-├── .gitignore
-
-└── MATRIX STRUCTURAL ANALYSIS – THE STIFFNESS METHOD/  
-
-    ├── setup.py
-    
-    └──  Matrix_Structural_Analysis/
-    
-        ├── __init__.py
-        
-        ├── Stiffiness_Matrix.py
-        
-        ├── Frame.py
-        
-        └── Truss.py
+      ├── Stiffiness Matrix.ipynb
+      ├── LICENSE
+      ├── .gitignore
+      └── MATRIX STRUCTURAL ANALYSIS – THE STIFFNESS METHOD/  
+          ├── setup.py
+          └──  Matrix_Structural_Analysis/
+               ├── __init__.py
+               ├── Stiffiness_Matrix.py
+               ├── Frame.py
+               └── Truss.py
 
 ## Acknowledgements
 
