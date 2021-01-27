@@ -5,14 +5,5 @@ dependencies:
   - pandas
   - numpy
   - pip:
-    - jupytext==1.8.0
-    - markdown-it-py==0.6.0
-    - mdit-py-plugins==0.2.4
-    - pkginfo==1.7.0
-    - readme-renderer==28.0
-    - requests-toolbelt==0.9.1
-    - rfc3986==1.4.0
-    - tqdm==4.56.0
-    - twine==3.3.0
     - Matrix-Structural-Analysis
 prefix: D:\Users\guilh\Anaconda3\envs\Udacity_env
